@@ -40,10 +40,10 @@ public class Server
 	}
 
 	/**
-	 * echoes the datapack back to client
+	 * replyes the datapack back to client
 	 * @throws Exception
 	 */
-	private void echo()
+	private void reply()
 	{
 		receivePacket = Client.waitPacket(receiveSocket, "Server");
 		byte[] data = receivePacket.getData();
@@ -181,7 +181,7 @@ public class Server
 		Server s = new Server();
 		while(true)
 		{
-			s.echo();
+			s.reply();
 		}
 
 	}
