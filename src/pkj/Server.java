@@ -11,7 +11,7 @@ import java.net.*;
  * @verison Feb 3, 2020
  *
  */
-public class Server
+public class Server extends Thread
 {
 
 	private static DatagramPacket receivePacket;
