@@ -11,7 +11,7 @@ import java.net.*;
  * @verison Feb 3, 2020
  *
  */
-public class Server extends Thread
+public class Server
 {
 
 	private static DatagramPacket receivePacket;
@@ -40,10 +40,10 @@ public class Server extends Thread
 	}
 
 	/**
-	 * replyes the datapack back to client
+	 * echoes the datapack back to client
 	 * @throws Exception
 	 */
-	private void reply()
+	private void echo()
 	{
 		receivePacket = Client.waitPacket(receiveSocket, "Server");
 		byte[] data = receivePacket.getData();
@@ -181,7 +181,7 @@ public class Server extends Thread
 		Server s = new Server();
 		while(true)
 		{
-			s.reply();
+			s.echo();
 		}
 
 	}

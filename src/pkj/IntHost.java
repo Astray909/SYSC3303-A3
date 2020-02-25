@@ -10,7 +10,7 @@ import java.net.*;
  * @version Feb 3, 2020
  *
  */
-public class IntHost extends Thread
+public class IntHost
 {
 	DatagramPacket sendPacket, receivePacket;
 	DatagramSocket sendSocket, receiveSocket;

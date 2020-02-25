@@ -11,7 +11,7 @@ import java.net.*;
  * @version Feb 3, 2020
  *
  */
-public class Client extends Thread
+public class Client
 {
 	private DatagramSocket sendReceiveSocket;
 
